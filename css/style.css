@@ -656,6 +656,9 @@ body {
   .container-fluid {
     width: 88%;
   }
+  .hwhw {
+    background-image: none;
+  }
   .portfolio .kiri {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -681,10 +684,6 @@ body {
   }
   .hero h4 {
     margin: auto;
-    color: #9b9b9b;
-  }
-  .hero h2 {
-    color: #9b9b9b;
   }
   .hero .intro {
     text-align: center;
