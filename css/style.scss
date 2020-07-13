@@ -1,0 +1,727 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333646;
+    font-family: Poppins;
+}
+
+.container-fluid {
+    width: 75%;
+}
+
+
+// Navbar
+
+.navbar-light {
+
+    align-items: center;
+    margin-top: 40px;
+
+    .navbar-brand {
+        img {
+            width: 70px;
+        }
+    }
+
+    .navbar-toggler {
+        color: white !important;
+    }
+
+    .navbar-nav {
+        margin-top: 20px;
+    }
+
+    .nav-link {
+        margin-left: 20px;
+        color: #666874 !important;
+        font-size: 30px;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    .nav-link.aktif {
+        color: white !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.hwhw {
+    background-image: url(../img/man2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+// Hero
+
+.hero {
+
+    .row {
+        margin-top: -20px;
+        padding-bottom: 100px;
+        padding-top: 70px;
+    }
+
+    .col-lg-6 {
+
+        h1 {
+            font-size: 80px;
+            color: white;
+            font-weight: 600;
+
+            &::after {
+                display: block;
+                content: '';
+                border-bottom: 14px solid royalblue;
+                width: 18%;
+                margin-top: 20px;
+            }
+        }
+
+        h4 {
+            color: white;
+            font-size: 20px;
+            margin-top: 16px;
+        }
+
+        .ssmd {
+            margin-left: 60px;
+        }
+
+    }
+
+
+    .col-lg-4 {
+
+
+        h5 {
+            color: #9ea2b4;
+            font-family: Lora;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+        }
+
+        p {
+            margin-top: 40px;
+            color: #9ea2b4;
+        }
+
+        .btn-story {
+            font-family: Poppins;
+            font-weight: 500;
+            color: white;
+            border-radius: 0;
+            border: 2px solid royalblue;
+            transition: all ease-in .1s;
+
+            &:hover {
+                background-color: royalblue;
+            }
+        }
+
+    }
+}
+
+
+// Contact
+
+.contact {
+    background-color: #252734;
+    padding-top: 100px;
+    padding-bottom: 260px;
+    margin-top: -7px;
+
+    .row {
+
+        .kiri {
+
+            h4 {
+                color: #9ea2b4;
+                font-size: 16px;
+                letter-spacing: 3px;
+            }
+
+            h2 {
+                color: white;
+                margin-top: 20px;
+                margin-bottom: 40px;
+                font-size: 40px;
+            }
+
+            p {
+                color: #9ea2b4;
+            }
+
+            h6 {
+                color: royalblue;
+                font-size: 20px;
+                display: inline-block;
+                border-bottom: 2px solid royalblue;
+                margin-top: 60px;
+            }
+
+            h3 {
+                color: royalblue;
+                font-size: 20px;
+                display: inline-block;
+            }
+
+        }
+
+        .kanan {
+
+            h2 {
+                color: white;
+                margin-bottom: 40px;
+            }
+
+            p {
+                color: #9ea2b4;
+            }
+
+            h1 {
+                font-size: 60px;
+                color: royalblue;
+            }
+
+            h5 {
+                color: white;
+                font-size: 16px;
+            }
+
+        }
+
+    }
+}
+
+
+// Panel
+
+.panel {
+
+    .row {
+        margin-top: -150px;
+    }
+
+    .card {
+        background-color: #424657;
+        color: white;
+        padding-bottom: 20px;
+        padding-top: 200px;
+        margin-bottom: 20px;
+
+        h2 {
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        h4 span {
+            font-size: 14px;
+        }
+    }
+
+    .card.active {
+        background-color: royalblue;
+    }
+
+}
+
+
+// Brand
+
+.brand {
+    .row {
+        filter: grayscale(90%);
+    }
+}
+
+
+// Portfolio
+
+.portfolio {
+
+    padding-bottom: 70px;
+
+    .kanan {
+
+        margin-top: 100px;
+        order: 2;
+
+        h4 {
+            color: #9ea2b4;
+            font-size: 16px;
+            letter-spacing: 3px;
+        }
+
+        h2 {
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 40px;
+        }
+
+        p {
+            color: #9ea2b4;
+        }
+
+        .btn-explore-more {
+            background-color: royalblue;
+            color: white;
+            font-family: Poppins;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: royalblue;
+            font-size: 20px;
+        }
+
+        .figure3 {
+
+            box-shadow: 0 5px 7px black;
+
+            .first-title {
+                font-weight: 500;
+                font-size: 30px;
+                color: white;
+            }
+
+            .two-title {
+                font-weight: 500;
+                color: white;
+            }
+
+
+        }
+
+    }
+
+    .kiri {
+
+        margin-top: 48px;
+        order: 1;
+
+        .figure1 {
+
+            box-shadow: 0 5px 7px black;
+
+            .first-title {
+                font-weight: 500;
+                font-size: 30px;
+                color: white;
+            }
+
+            .two-title {
+                font-weight: 500;
+                color: white;
+            }
+
+            background-color: #252734;
+            margin-top: 100px;
+        }
+
+        .figure2 {
+
+            box-shadow: 0 5px 7px black;
+
+            .first-title {
+                font-weight: 500;
+                font-size: 30px;
+                color: white;
+            }
+
+            .two-title {
+                font-weight: 500;
+                color: white;
+            }
+
+            background-color: #252734;
+            margin-top: 70px;
+        }
+
+    }
+}
+
+
+// Blog
+
+.blog {
+
+    background-color: #252734;
+    padding-top: 50px;
+    padding-bottom: 70px;
+
+    h4 {
+        color: #9ea2b4;
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    p {
+        color: #9ea2b4;
+    }
+
+    h3 {
+        color: royalblue;
+        border-bottom: 2px solid royalblue;
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    h5 {
+        color: white;
+    }
+
+}
+
+
+// Testimonial
+
+.testimonial {
+    background-color: #252734;
+    padding: 100px 0;
+
+    h1 {
+        color: #424657;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    h3 {
+        margin-top: 70px;
+        color: white;
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 50px;
+    }
+
+    h3 span {
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+}
+
+
+// Project
+
+.project {
+    background-color: #333646;
+    padding: 70px 0;
+
+    h2 {
+        color: white;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    p {
+        color: #9ea2b4;
+    }
+
+    h5 {
+        color: white;
+    }
+
+    input.text {
+        background-color: #333646;
+        border: none;
+        border-bottom: 1px solid #9ea2b4;
+        width: 100%;
+        color: white;
+    }
+
+    .btn-subscribe {
+        background-color: royalblue;
+        color: #fff;
+        font-weight: 600;
+        border-radius: 0;
+        box-shadow: 0 2px 3px #111111;
+        position: relative;
+    }
+
+    .btn-subscribe:active {
+        box-shadow: none;
+        top: 2px;
+    }
+
+    // input.file {
+    //     color: white !important;
+    // }
+
+    h4 {
+        color: white;
+    }
+
+    .btn-explore-more {
+        background-color: royalblue;
+        color: white;
+        font-family: Poppins;
+        font-weight: 500;
+        margin-top: 20px;
+    }
+}
+
+
+// Footer
+
+.footer {
+    background-color: #252734;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: white;
+}
+
+
+// Profile Page
+
+.section-profile {
+
+    .profile-header {
+        background-color: royalblue;
+
+        .img-profile {
+            width: 36%;
+            border-radius: 100px;
+            box-shadow: 0 3px 3px #333646;
+        }
+
+        h1 {
+            margin-top: 20px;
+            font-weight: 600;
+            color: #333646;
+        }
+    }
+
+    .profile-main {
+        color: #fff;
+
+        .kontak {
+            margin-bottom: 40px;
+
+            h3 {
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                font-size: 24px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+            .fab {
+                margin-top: 10px;
+                box-shadow: 3px 3px #000000;
+                color: #333646;
+            }
+        }
+
+        .kemampuan {
+            margin-bottom: 20px;
+
+            h3 {
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                font-size: 24px;
+                padding-bottom: 10px;
+                margin-bottom: 26px;
+            }
+
+            .b5 {
+                background-color: rgb(140, 0, 255);
+            }
+        }
+
+        .hobi {
+            h3 {
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                font-size: 24px;
+                padding-bottom: 10px;
+                margin-bottom: 26px;
+            }
+
+            .hobbi {
+                h1 {
+                    font-size: 70px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+
+    .profile-desc {
+        width: 90%;
+        padding: 20px 0 26px 60px;
+
+        h3 {
+            font-weight: 500;
+            letter-spacing: 4px;
+            border-bottom: 2px solid royalblue;
+            font-size: 24px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #333646;
+        }
+    }
+
+    .pendidikan {
+        width: 90%;
+        padding: 0 0 30px 60px;
+
+        h3 {
+            font-weight: 500;
+            letter-spacing: 4px;
+            border-bottom: 2px solid royalblue;
+            font-size: 24px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #333646;
+        }
+    }
+
+    .pengalaman {
+        width: 90%;
+        padding: 0 0 30px 60px;
+
+        h3 {
+            font-weight: 500;
+            letter-spacing: 4px;
+            border-bottom: 2px solid royalblue;
+            font-size: 24px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #333646;
+        }
+    }
+
+    .prestasi {
+        width: 90%;
+        padding: 0 0 20px 60px;
+
+        h3 {
+            font-weight: 500;
+            letter-spacing: 4px;
+            border-bottom: 2px solid royalblue;
+            font-size: 24px;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #333646;
+        }
+    }
+
+    .btn-kembali {
+        margin-top: 90px;
+        margin-left: 60px;
+        background-color: royalblue;
+        border-radius: 0;
+        color: white;
+        font-weight: 500;
+
+        &:hover {
+            background-color: rgb(0, 49, 197);
+        }
+    }
+}
+
+
+@media (max-width: 990px) {
+    .portfolio {
+        .kiri {
+            order: 2;
+        }
+
+        .kanan {
+            order: 1;
+            margin-bottom: -90px;
+        }
+    }
+
+    .project {
+        h4 {
+            margin-top: 20px;
+        }
+    }
+
+    .hwhw {
+        background-attachment: scroll;
+    }
+
+    .hero {
+
+        h1 {
+            text-align: center;
+
+            &::after {
+                margin: 0 auto;
+            }
+        }
+
+        h4 {
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+        }
+    }
+
+    .contact {
+        .year {
+            justify-content: center;
+        }
+    }
+
+    .brand {
+        .brando {
+            margin: 20px 0;
+        }
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
