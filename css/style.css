@@ -1,11 +1,16 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   background-color: #333646;
-  font-family: Poppins;
+  font-family: 'Poppins';
 }
 
 .container-fluid {
@@ -35,7 +40,7 @@ body {
   margin-left: 20px;
   color: #666874 !important;
   font-size: 30px;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
 }
 
@@ -51,11 +56,15 @@ body {
 }
 
 .hwhw {
-  background-image: url(../img/man2.png);
+  background-image: url(../img/illustration.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+.hero {
+  padding-bottom: 24px;
 }
 
 .hero .row {
@@ -64,13 +73,28 @@ body {
   padding-top: 70px;
 }
 
-.hero .col-lg-6 h1 {
+.hero .sosmed {
+  margin-top: 100px;
+}
+
+.hero .down {
+  -webkit-animation: scroll .7s infinite ease alternate;
+          animation: scroll .7s infinite ease alternate;
+}
+
+.hero .down .scroll {
+  margin-top: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.hero h1 {
   font-size: 80px;
   color: white;
   font-weight: 600;
 }
 
-.hero .col-lg-6 h1::after {
+.hero h1::after {
   display: block;
   content: '';
   border-bottom: 14px solid royalblue;
@@ -78,35 +102,35 @@ body {
   margin-top: 20px;
 }
 
-.hero .col-lg-6 h4 {
+.hero h4 {
   color: white;
   font-size: 20px;
   margin-top: 16px;
 }
 
-.hero .col-lg-6 .ssmd {
+.hero .ssmd {
   margin-left: 60px;
 }
 
-.hero .col-lg-4 h5 {
+.hero h5 {
   color: #9ea2b4;
-  font-family: Lora;
+  font-family: 'Lora';
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
 
-.hero .col-lg-4 h2 {
+.hero h2 {
   color: white;
   font-size: 30px;
 }
 
-.hero .col-lg-4 p {
+.hero p {
   margin-top: 40px;
   color: #9ea2b4;
 }
 
-.hero .col-lg-4 .btn-story {
-  font-family: Poppins;
+.hero .btn-story {
+  font-family: 'Poppins';
   font-weight: 500;
   color: white;
   border-radius: 0;
@@ -115,7 +139,7 @@ body {
   transition: all ease-in .1s;
 }
 
-.hero .col-lg-4 .btn-story:hover {
+.hero .btn-story:hover {
   background-color: royalblue;
 }
 
@@ -177,24 +201,20 @@ body {
 }
 
 .panel .row {
-  margin-top: -150px;
+  margin-top: -160px;
 }
 
 .panel .card {
   background-color: #424657;
   color: white;
   padding-bottom: 20px;
-  padding-top: 200px;
+  padding-top: 260px;
   margin-bottom: 20px;
 }
 
 .panel .card h2 {
   margin-bottom: 20px;
   margin-right: 20px;
-}
-
-.panel .card h4 span {
-  font-size: 14px;
 }
 
 .panel .card.active {
@@ -237,7 +257,7 @@ body {
 .portfolio .kanan .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
 }
 
@@ -249,6 +269,8 @@ body {
 .portfolio .kanan .figure3 {
   -webkit-box-shadow: 0 5px 7px black;
           box-shadow: 0 5px 7px black;
+  background-color: #252734;
+  margin-top: 100px;
 }
 
 .portfolio .kanan .figure3 .first-title {
@@ -262,11 +284,21 @@ body {
   color: white;
 }
 
+.portfolio .kanan .figure3 .figure-caption {
+  padding: 50px 20px 20px 30px;
+  margin-bottom: -100px;
+}
+
 .portfolio .kiri {
   margin-top: 48px;
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
+}
+
+.portfolio .kiri .figure-caption {
+  padding: 50px 20px 40px 30px;
+  margin-bottom: -120px;
 }
 
 .portfolio .kiri .figure1 {
@@ -309,6 +341,12 @@ body {
   background-color: #252734;
   padding-top: 50px;
   padding-bottom: 70px;
+}
+
+.blog .bloging {
+  border-bottom: 1px solid #3F414D;
+  padding-top: 40px;
+  padding-bottom: 14px;
 }
 
 .blog h4 {
@@ -416,7 +454,7 @@ body {
 .project .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: Poppins;
+  font-family: 'Poppins';
   font-weight: 500;
   margin-top: 20px;
 }
@@ -434,7 +472,7 @@ body {
 }
 
 .section-profile .profile-header .img-profile {
-  width: 36%;
+  width: 35%;
   border-radius: 100px;
   -webkit-box-shadow: 0 3px 3px #333646;
           box-shadow: 0 3px 3px #333646;
@@ -594,7 +632,30 @@ body {
   background-color: #0031c5;
 }
 
+@-webkit-keyframes scroll {
+  0% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: -80px;
+    margin-bottom: 40px;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    margin-top: -40px;
+  }
+  100% {
+    margin-top: -80px;
+    margin-bottom: 40px;
+  }
+}
+
 @media (max-width: 990px) {
+  .container-fluid {
+    width: 88%;
+  }
   .portfolio .kiri {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -620,6 +681,10 @@ body {
   }
   .hero h4 {
     margin: auto;
+    color: #9b9b9b;
+  }
+  .hero h2 {
+    color: #9b9b9b;
   }
   .hero .intro {
     text-align: center;

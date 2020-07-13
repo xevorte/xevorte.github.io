@@ -1,16 +1,20 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 body {
     background-color: #333646;
-    font-family: Poppins;
+    font-family: 'Poppins';
 }
 
 .container-fluid {
     width: 75%;
 }
-
 
 // Navbar
 
@@ -37,7 +41,7 @@ body {
         margin-left: 20px;
         color: #666874 !important;
         font-size: 30px;
-        font-family: Poppins;
+        font-family: 'Poppins';
         font-weight: 500;
     }
 
@@ -50,7 +54,7 @@ body {
 }
 
 .hwhw {
-    background-image: url(../img/man2.png);
+    background-image: url(../img/illustration.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -60,6 +64,7 @@ body {
 // Hero
 
 .hero {
+    padding-bottom: 24px;
 
     .row {
         margin-top: -20px;
@@ -67,68 +72,73 @@ body {
         padding-top: 70px;
     }
 
-    .col-lg-6 {
+    .sosmed {
+        margin-top: 100px;
+    }
 
-        h1 {
-            font-size: 80px;
-            color: white;
-            font-weight: 600;
+    .down {
+        animation: scroll .7s infinite ease alternate;
 
-            &::after {
-                display: block;
-                content: '';
-                border-bottom: 14px solid royalblue;
-                width: 18%;
-                margin-top: 20px;
-            }
+        .scroll {
+            margin-top: 10px;
+            cursor: pointer;
+            display: inline-block;
         }
+    }
 
-        h4 {
-            color: white;
-            font-size: 20px;
-            margin-top: 16px;
+    h1 {
+        font-size: 80px;
+        color: white;
+        font-weight: 600;
+
+        &::after {
+            display: block;
+            content: '';
+            border-bottom: 14px solid royalblue;
+            width: 18%;
+            margin-top: 20px;
         }
+    }
 
-        .ssmd {
-            margin-left: 60px;
-        }
+    h4 {
+        color: white;
+        font-size: 20px;
+        margin-top: 16px;
+    }
 
+    .ssmd {
+        margin-left: 60px;
     }
 
 
-    .col-lg-4 {
+    h5 {
+        color: #9ea2b4;
+        font-family: 'Lora';
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+    }
 
+    h2 {
+        color: white;
+        font-size: 30px;
+    }
 
-        h5 {
-            color: #9ea2b4;
-            font-family: Lora;
-            letter-spacing: 3px;
-            margin-bottom: 10px;
+    p {
+        margin-top: 40px;
+        color: #9ea2b4;
+    }
+
+    .btn-story {
+        font-family: 'Poppins';
+        font-weight: 500;
+        color: white;
+        border-radius: 0;
+        border: 2px solid royalblue;
+        transition: all ease-in .1s;
+
+        &:hover {
+            background-color: royalblue;
         }
-
-        h2 {
-            color: white;
-            font-size: 30px;
-        }
-
-        p {
-            margin-top: 40px;
-            color: #9ea2b4;
-        }
-
-        .btn-story {
-            font-family: Poppins;
-            font-weight: 500;
-            color: white;
-            border-radius: 0;
-            border: 2px solid royalblue;
-            transition: all ease-in .1s;
-
-            &:hover {
-                background-color: royalblue;
-            }
-        }
-
     }
 }
 
@@ -210,23 +220,19 @@ body {
 .panel {
 
     .row {
-        margin-top: -150px;
+        margin-top: -160px;
     }
 
     .card {
         background-color: #424657;
         color: white;
         padding-bottom: 20px;
-        padding-top: 200px;
+        padding-top: 260px;
         margin-bottom: 20px;
 
         h2 {
             margin-bottom: 20px;
             margin-right: 20px;
-        }
-
-        h4 span {
-            font-size: 14px;
         }
     }
 
@@ -277,7 +283,7 @@ body {
         .btn-explore-more {
             background-color: royalblue;
             color: white;
-            font-family: Poppins;
+            font-family: 'Poppins';
             font-weight: 500;
         }
 
@@ -289,6 +295,8 @@ body {
         .figure3 {
 
             box-shadow: 0 5px 7px black;
+            background-color: #252734;
+            margin-top: 100px;
 
             .first-title {
                 font-weight: 500;
@@ -301,6 +309,10 @@ body {
                 color: white;
             }
 
+            .figure-caption {
+                padding: 50px 20px 20px 30px;
+                margin-bottom: -100px;
+            }
 
         }
 
@@ -310,6 +322,11 @@ body {
 
         margin-top: 48px;
         order: 1;
+
+        .figure-caption {
+            padding: 50px 20px 40px 30px;
+            margin-bottom: -120px;
+        }
 
         .figure1 {
 
@@ -360,6 +377,12 @@ body {
     background-color: #252734;
     padding-top: 50px;
     padding-bottom: 70px;
+
+    .bloging {
+        border-bottom: 1px solid #3F414D;
+        padding-top: 40px;
+        padding-bottom: 14px;
+    }
 
     h4 {
         color: #9ea2b4;
@@ -476,7 +499,7 @@ body {
     .btn-explore-more {
         background-color: royalblue;
         color: white;
-        font-family: Poppins;
+        font-family: 'Poppins';
         font-weight: 500;
         margin-top: 20px;
     }
@@ -502,7 +525,7 @@ body {
         background-color: royalblue;
 
         .img-profile {
-            width: 36%;
+            width: 35%;
             border-radius: 100px;
             box-shadow: 0 3px 3px #333646;
         }
@@ -668,7 +691,24 @@ body {
 }
 
 
+@keyframes scroll {
+    0% {
+        margin-top: -40px;
+    }
+
+    100% {
+        margin-top: -80px;
+        margin-bottom: 40px;
+    }
+}
+
+
 @media (max-width: 990px) {
+    .container-fluid {
+        width: 88%;
+    }
+
+
     .portfolio {
         .kiri {
             order: 2;
@@ -702,6 +742,11 @@ body {
 
         h4 {
             margin: auto;
+            color: rgb(155, 155, 155);
+        }
+
+        h2 {
+            color: rgb(155, 155, 155);
         }
 
         .intro {
