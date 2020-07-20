@@ -13,6 +13,33 @@ body {
   font-family: Arial;
 }
 
+.load {
+  background-color: #333646;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.load .loading {
+  width: 70px;
+  height: 70px;
+  border: 7px solid #ccc;
+  border-top-color: royalblue;
+  border-radius: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-animation: load 1.4s linear infinite;
+          animation: load 1.4s linear infinite;
+}
+
 h1,
 h2,
 h3 {
@@ -1026,6 +1053,28 @@ input {
   100% {
     margin-top: -80px;
     margin-bottom: 40px;
+  }
+}
+
+@-webkit-keyframes load {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes load {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
