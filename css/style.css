@@ -10,7 +10,11 @@ a {
 
 body {
   background-color: #333646;
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+  outline: none;
 }
 
 .container-fluid {
@@ -40,7 +44,7 @@ body {
   margin-left: 20px;
   color: #666874 !important;
   font-size: 30px;
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -91,7 +95,7 @@ body {
 .hero h1 {
   font-size: 80px;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .hero h1::after {
@@ -114,7 +118,8 @@ body {
 
 .hero h5 {
   color: #9ea2b4;
-  font-family: 'Lora';
+  font-family: serif;
+  font-weight: 500;
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
@@ -130,7 +135,7 @@ body {
 }
 
 .hero .btn-story {
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   color: white;
   border-radius: 0;
@@ -257,7 +262,7 @@ body {
 .portfolio .kanan .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -368,9 +373,18 @@ body {
 
 .blog h3 {
   color: royalblue;
-  border-bottom: 2px solid royalblue;
   display: inline-block;
   font-size: 20px;
+  padding: 4px 6px;
+  background-color: white;
+  height: 4px;
+  -webkit-transition: all .6s ease;
+  transition: all .6s ease;
+}
+
+.blog h3:hover {
+  background-color: white;
+  height: 28px;
 }
 
 .blog h5 {
@@ -434,7 +448,7 @@ body {
 .project .btn-subscribe {
   background-color: royalblue;
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 0;
   -webkit-box-shadow: 0 2px 3px #111111;
           box-shadow: 0 2px 3px #111111;
@@ -454,7 +468,7 @@ body {
 .project .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: 'Poppins';
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
   margin-top: 20px;
 }
@@ -480,25 +494,43 @@ body {
 
 .section-profile .profile-header h1 {
   margin-top: 20px;
-  font-weight: 600;
+  font-weight: 700;
   color: #333646;
 }
 
 .section-profile .profile-main {
   color: #fff;
+  height: 855px;
+  overflow: auto;
 }
 
 .section-profile .profile-main .kontak {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
-.section-profile .profile-main .kontak h3 {
+.section-profile .profile-main .kontak .kntk {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main .kontak .btn-main {
+  border-radius: 0;
   font-weight: 500;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
-  font-size: 24px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main .kontak .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
 .section-profile .profile-main .kontak .fab {
@@ -512,26 +544,62 @@ body {
   margin-bottom: 20px;
 }
 
-.section-profile .profile-main .kemampuan h3 {
+.section-profile .profile-main .kemampuan .kemampuans {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main .kemampuan .btn-main {
+  border-radius: 0;
   font-weight: 500;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
-  font-size: 24px;
-  padding-bottom: 10px;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
   margin-bottom: 26px;
+}
+
+.section-profile .profile-main .kemampuan .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
 .section-profile .profile-main .kemampuan .b5 {
   background-color: #8c00ff;
 }
 
-.section-profile .profile-main .hobi h3 {
+.section-profile .profile-main .hobi {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main .hobi .hoby {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main .hobi .btn-main {
+  border-radius: 0;
   font-weight: 500;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
-  font-size: 24px;
-  padding-bottom: 10px;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
   margin-bottom: 26px;
+}
+
+.section-profile .profile-main .hobi .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
 }
 
 .section-profile .profile-main .hobi .hobbi h1 {
@@ -541,6 +609,305 @@ body {
 .section-profile .profile-main .hobi .hobbi p {
   font-weight: 300;
   font-size: 14px;
+}
+
+.section-profile .profile-main .organisasi {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main .organisasi .team {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main .organisasi .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main .organisasi .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main .organisasi p {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-profile .profile-main .organisasi span {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.section-profile .profile-main .organisasi h6 {
+  border: 2px solid white;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.section-profile .profile-main .sertifikat {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main .sertifikat .team {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main .sertifikat .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main .sertifikat .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main .sertifikat p {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-profile .profile-main .sertifikat span {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.section-profile .profile-main .sertifikat h6 {
+  border: 2px solid white;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.section-profile .profile-main2 {
+  color: #fff;
+}
+
+.section-profile .profile-main2 .kontak {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main2 .kontak .kntk {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main2 .kontak .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main2 .kontak .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main2 .kontak .fab {
+  margin-top: 10px;
+  -webkit-box-shadow: 3px 3px #000000;
+          box-shadow: 3px 3px #000000;
+  color: #333646;
+}
+
+.section-profile .profile-main2 .kemampuan {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main2 .kemampuan .kemampuans {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main2 .kemampuan .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main2 .kemampuan .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main2 .kemampuan .b5 {
+  background-color: #8c00ff;
+}
+
+.section-profile .profile-main2 .hobi {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main2 .hobi .hoby {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main2 .hobi .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main2 .hobi .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main2 .hobi .hobbi h1 {
+  font-size: 70px;
+}
+
+.section-profile .profile-main2 .hobi .hobbi p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.section-profile .profile-main2 .organisasi {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main2 .organisasi .team {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main2 .organisasi .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main2 .organisasi .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main2 .organisasi p {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-profile .profile-main2 .organisasi span {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.section-profile .profile-main2 .organisasi h6 {
+  border: 2px solid white;
+  padding: 6px 0;
+  cursor: pointer;
+}
+
+.section-profile .profile-main2 .sertifikat {
+  margin-bottom: 20px;
+}
+
+.section-profile .profile-main2 .sertifikat .team {
+  border-top: 2px solid royalblue;
+  padding-top: 20px;
+}
+
+.section-profile .profile-main2 .sertifikat .btn-main {
+  border-radius: 0;
+  font-weight: 500;
+  letter-spacing: 4px;
+  border-bottom: 2px solid royalblue;
+  -webkit-box-shadow: -4px 4px 2px black;
+          box-shadow: -4px 4px 2px black;
+  font-size: 20px;
+  position: relative;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+  margin-bottom: 26px;
+}
+
+.section-profile .profile-main2 .sertifikat .btn-main:active {
+  margin-left: -1px;
+  -webkit-box-shadow: 0 0 0 black;
+          box-shadow: 0 0 0 black;
+}
+
+.section-profile .profile-main2 .sertifikat p {
+  color: royalblue;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.section-profile .profile-main2 .sertifikat span {
+  color: white;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.section-profile .profile-main2 .sertifikat h6 {
+  border: 2px solid white;
+  padding: 6px 0;
+  cursor: pointer;
 }
 
 .section-profile .profile-desc {

@@ -9,7 +9,11 @@ a {
 
 body {
     background-color: #333646;
-    font-family: 'Poppins';
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    outline: none;
 }
 
 .container-fluid {
@@ -41,7 +45,7 @@ body {
         margin-left: 20px;
         color: #666874 !important;
         font-size: 30px;
-        font-family: 'Poppins';
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
     }
 
@@ -89,7 +93,7 @@ body {
     h1 {
         font-size: 80px;
         color: white;
-        font-weight: 600;
+        font-weight: 700;
 
         &::after {
             display: block;
@@ -113,7 +117,8 @@ body {
 
     h5 {
         color: #9ea2b4;
-        font-family: 'Lora';
+        font-family: serif;
+        font-weight: 500;
         letter-spacing: 3px;
         margin-bottom: 10px;
     }
@@ -129,7 +134,7 @@ body {
     }
 
     .btn-story {
-        font-family: 'Poppins';
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         color: white;
         border-radius: 0;
@@ -283,7 +288,7 @@ body {
         .btn-explore-more {
             background-color: royalblue;
             color: white;
-            font-family: 'Poppins';
+            font-family: Arial, Helvetica, sans-serif;
             font-weight: 500;
         }
 
@@ -403,9 +408,17 @@ body {
 
     h3 {
         color: royalblue;
-        border-bottom: 2px solid royalblue;
         display: inline-block;
         font-size: 20px;
+        padding: 4px 6px;
+        background-color: white;
+        height: 4px;
+        transition: all .6s ease;
+
+        &:hover {
+            background-color: white;
+            height: 28px;
+        }
     }
 
     h5 {
@@ -477,7 +490,7 @@ body {
     .btn-subscribe {
         background-color: royalblue;
         color: #fff;
-        font-weight: 600;
+        font-weight: 700;
         border-radius: 0;
         box-shadow: 0 2px 3px #111111;
         position: relative;
@@ -499,7 +512,7 @@ body {
     .btn-explore-more {
         background-color: royalblue;
         color: white;
-        font-family: 'Poppins';
+        font-family: Arial, Helvetica, sans-serif;
         font-weight: 500;
         margin-top: 20px;
     }
@@ -532,24 +545,39 @@ body {
 
         h1 {
             margin-top: 20px;
-            font-weight: 600;
+            font-weight: 700;
             color: #333646;
         }
     }
 
     .profile-main {
         color: #fff;
+        height: 855px;
+        overflow: auto;
 
         .kontak {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
 
-            h3 {
+            .kntk {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
                 font-weight: 500;
                 letter-spacing: 4px;
                 border-bottom: 2px solid royalblue;
-                font-size: 24px;
-                padding-bottom: 10px;
-                margin-bottom: 20px;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
             }
 
             .fab {
@@ -562,13 +590,26 @@ body {
         .kemampuan {
             margin-bottom: 20px;
 
-            h3 {
+            .kemampuans {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
                 font-weight: 500;
                 letter-spacing: 4px;
                 border-bottom: 2px solid royalblue;
-                font-size: 24px;
-                padding-bottom: 10px;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
                 margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
             }
 
             .b5 {
@@ -577,13 +618,28 @@ body {
         }
 
         .hobi {
-            h3 {
+            margin-bottom: 20px;
+
+            .hoby {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
                 font-weight: 500;
                 letter-spacing: 4px;
                 border-bottom: 2px solid royalblue;
-                font-size: 24px;
-                padding-bottom: 10px;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
                 margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
             }
 
             .hobbi {
@@ -595,6 +651,290 @@ body {
                     font-weight: 300;
                     font-size: 14px;
                 }
+            }
+
+        }
+
+        .organisasi {
+            margin-bottom: 20px;
+
+            .team {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            p {
+                color: royalblue;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            span {
+                color: white;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            h6 {
+                border: 2px solid white;
+                padding: 6px 0;
+                cursor: pointer;
+            }
+
+        }
+
+        .sertifikat {
+            margin-bottom: 20px;
+
+            .team {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            p {
+                color: royalblue;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            span {
+                color: white;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            h6 {
+                border: 2px solid white;
+                padding: 6px 0;
+                cursor: pointer;
+            }
+
+        }
+    }
+
+    .profile-main2 {
+        color: #fff;
+
+        .kontak {
+            margin-bottom: 20px;
+
+            .kntk {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            .fab {
+                margin-top: 10px;
+                box-shadow: 3px 3px #000000;
+                color: #333646;
+            }
+        }
+
+        .kemampuan {
+            margin-bottom: 20px;
+
+            .kemampuans {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            .b5 {
+                background-color: rgb(140, 0, 255);
+            }
+        }
+
+        .hobi {
+            margin-bottom: 20px;
+
+            .hoby {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            .hobbi {
+                h1 {
+                    font-size: 70px;
+                }
+
+                p {
+                    font-weight: 300;
+                    font-size: 14px;
+                }
+            }
+
+        }
+
+        .organisasi {
+            margin-bottom: 20px;
+
+            .team {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            p {
+                color: royalblue;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            span {
+                color: white;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            h6 {
+                border: 2px solid white;
+                padding: 6px 0;
+                cursor: pointer;
+            }
+
+        }
+
+        .sertifikat {
+            margin-bottom: 20px;
+
+            .team {
+                border-top: 2px solid royalblue;
+                padding-top: 20px;
+            }
+
+            .btn-main {
+                border-radius: 0;
+                font-weight: 500;
+                letter-spacing: 4px;
+                border-bottom: 2px solid royalblue;
+                box-shadow: -4px 4px 2px black;
+                font-size: 20px;
+                position: relative;
+                transition: all ease .2s;
+                margin-bottom: 26px;
+
+                &:active {
+                    margin-left: -1px;
+                    box-shadow: 0 0 0 black;
+                }
+            }
+
+            p {
+                color: royalblue;
+                font-weight: 700;
+                font-size: 20px;
+            }
+
+            span {
+                color: white;
+                font-weight: 400;
+                font-size: 13px;
+            }
+
+            h6 {
+                border: 2px solid white;
+                padding: 6px 0;
+                cursor: pointer;
             }
 
         }
@@ -704,6 +1044,7 @@ body {
 
 
 @media (max-width: 990px) {
+
     .container-fluid {
         width: 88%;
     }
