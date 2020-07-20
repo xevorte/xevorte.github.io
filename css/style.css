@@ -13,6 +13,16 @@ body {
   font-family: Arial;
 }
 
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 500;
+}
+
 input {
   outline: none;
 }
