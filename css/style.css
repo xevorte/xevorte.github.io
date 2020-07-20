@@ -10,7 +10,7 @@ a {
 
 body {
   background-color: #333646;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial;
 }
 
 input {
@@ -44,8 +44,8 @@ input {
   margin-left: 20px;
   color: #666874 !important;
   font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .navbar-light .nav-link.aktif {
@@ -119,7 +119,7 @@ input {
 .hero h5 {
   color: #9ea2b4;
   font-family: serif;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 3px;
   margin-bottom: 10px;
 }
@@ -135,8 +135,8 @@ input {
 }
 
 .hero .btn-story {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: Arial;
+  font-weight: 600;
   color: white;
   border-radius: 0;
   border: 2px solid royalblue;
@@ -262,8 +262,8 @@ input {
 .portfolio .kanan .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: Arial;
+  font-weight: 600;
 }
 
 .portfolio .kanan h3 {
@@ -279,13 +279,13 @@ input {
 }
 
 .portfolio .kanan .figure3 .first-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
   color: white;
 }
 
 .portfolio .kanan .figure3 .two-title {
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 
@@ -314,13 +314,13 @@ input {
 }
 
 .portfolio .kiri .figure1 .first-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
   color: white;
 }
 
 .portfolio .kiri .figure1 .two-title {
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 
@@ -332,13 +332,13 @@ input {
 }
 
 .portfolio .kiri .figure2 .first-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 30px;
   color: white;
 }
 
 .portfolio .kiri .figure2 .two-title {
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 
@@ -468,8 +468,8 @@ input {
 .project .btn-explore-more {
   background-color: royalblue;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
+  font-family: Arial;
+  font-weight: 600;
   margin-top: 20px;
 }
 
@@ -515,7 +515,7 @@ input {
 
 .section-profile .profile-main .kontak .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -551,7 +551,7 @@ input {
 
 .section-profile .profile-main .kemampuan .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -584,7 +584,7 @@ input {
 
 .section-profile .profile-main .hobi .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -622,7 +622,7 @@ input {
 
 .section-profile .profile-main .organisasi .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -669,7 +669,7 @@ input {
 
 .section-profile .profile-main .sertifikat .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -720,7 +720,7 @@ input {
 
 .section-profile .profile-main2 .kontak .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -756,7 +756,7 @@ input {
 
 .section-profile .profile-main2 .kemampuan .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -789,7 +789,7 @@ input {
 
 .section-profile .profile-main2 .hobi .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -827,7 +827,7 @@ input {
 
 .section-profile .profile-main2 .organisasi .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -874,7 +874,7 @@ input {
 
 .section-profile .profile-main2 .sertifikat .btn-main {
   border-radius: 0;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   -webkit-box-shadow: -4px 4px 2px black;
@@ -916,7 +916,7 @@ input {
 }
 
 .section-profile .profile-desc h3 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   font-size: 24px;
@@ -935,7 +935,7 @@ input {
 }
 
 .section-profile .pendidikan h3 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   font-size: 24px;
@@ -954,7 +954,7 @@ input {
 }
 
 .section-profile .pengalaman h3 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   font-size: 24px;
@@ -973,7 +973,7 @@ input {
 }
 
 .section-profile .prestasi h3 {
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 4px;
   border-bottom: 2px solid royalblue;
   font-size: 24px;
@@ -992,7 +992,7 @@ input {
   background-color: royalblue;
   border-radius: 0;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .section-profile .btn-kembali:hover {
