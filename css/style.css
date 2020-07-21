@@ -1037,6 +1037,41 @@ input {
   background-color: #0031c5;
 }
 
+.section-project .projects {
+  background-color: #252734;
+  margin: 80px 0;
+}
+
+.section-project .btn-demo {
+  background: -webkit-gradient(linear, left top, left bottom, from(royalblue), to(cyan));
+  background: linear-gradient(royalblue, cyan);
+  color: white;
+  font-weight: 600;
+  padding: 6px 42px;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.section-project .btn-demo:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(cyan), to(royalblue));
+  background: linear-gradient(cyan, royalblue);
+}
+
+.section-project .btn-sc {
+  color: white;
+  font-weight: 600;
+}
+
+.section-project .btn-sc:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(royalblue), to(cyan));
+  background: linear-gradient(royalblue, cyan);
+}
+
+.section-project .btn-sc:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(cyan), to(royalblue));
+  background: linear-gradient(cyan, royalblue);
+}
+
 @-webkit-keyframes scroll {
   0% {
     margin-top: -40px;

@@ -1068,6 +1068,41 @@ input {
 }
 
 
+// Projects
+
+.section-project {
+    .projects {
+        background-color: #252734;
+        margin: 80px 0;
+    }
+
+    .btn-demo {
+        background: linear-gradient(royalblue, cyan);
+        color: white;
+        font-weight: 600;
+        padding: 6px 42px;
+        transition: all ease 1s;
+    }
+
+    .btn-demo:active {
+        background: linear-gradient(cyan, royalblue);
+    }
+
+    .btn-sc {
+        color: white;
+        font-weight: 600;
+    }
+
+    .btn-sc:hover {
+        background: linear-gradient(royalblue, cyan);
+    }
+
+    .btn-sc:active {
+        background: linear-gradient(cyan, royalblue);
+    }
+}
+
+
 @keyframes scroll {
     0% {
         margin-top: -40px;
