@@ -1150,6 +1150,12 @@ input {
   .hero .intro {
     text-align: center;
   }
+  .hero .sosmed {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .contact .year {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
