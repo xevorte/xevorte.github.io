@@ -13,6 +13,10 @@ body {
   font-family: Arial;
 }
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 .load {
   background-color: black;
   z-index: 9999;
@@ -41,6 +45,80 @@ body {
           animation: load 1.4s linear infinite;
 }
 
+.scroll {
+  z-index: 9999;
+}
+
+.scroll #scrollPath {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.scroll #progressbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6d90fa), to(cyan));
+  background: linear-gradient(to top, #6d90fa, cyan);
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    -webkit-filter: hue-rotate(0deg);
+            filter: hue-rotate(0deg);
+  }
+  50% {
+    -webkit-filter: hue-rotate(360deg);
+            filter: hue-rotate(360deg);
+  }
+}
+
+.scroll #progressbar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6d90fa), to(cyan));
+  background: linear-gradient(to top, #6d90fa, cyan);
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+.scroll #progressbar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#6d90fa), to(cyan));
+  background: linear-gradient(to top, #6d90fa, cyan);
+  -webkit-filter: blur(30px);
+          filter: blur(30px);
+}
+
 h1,
 h2,
 h3 {
@@ -56,7 +134,7 @@ input {
 }
 
 .container-fluid {
-  width: 75%;
+  width: 80%;
 }
 
 .navbar-light {
@@ -1186,7 +1264,7 @@ input {
     display: none;
   }
   .container-fluid {
-    width: 88%;
+    width: 84%;
   }
   .hwhw {
     background-image: none;
