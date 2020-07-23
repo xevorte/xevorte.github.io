@@ -63,7 +63,7 @@ input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 40px;
+  margin-top: 22px;
 }
 
 .navbar-light .navbar-brand img {
@@ -97,6 +97,40 @@ input {
           flex-direction: column;
 }
 
+.navbar-light .aktif::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: 2px solid royalblue;
+  margin: auto;
+  border-radius: 100%;
+  background-color: royalblue;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-top: 1px;
+}
+
+.navbar-light .unactive::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  margin: auto;
+  border-radius: 100%;
+  background-color: transparent;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  margin-top: 1px;
+}
+
+.navbar-light .unactive:hover::after {
+  width: 10px;
+  height: 10px;
+  background-color: royalblue;
+}
+
 .hwhw {
   background-image: url(../img/illustration.png);
   background-size: cover;
@@ -125,7 +159,9 @@ input {
 }
 
 .hero .down .scroll {
-  margin-top: 10px;
+  margin-top: 20px;
+  font-size: 40px;
+  margin-bottom: 10px;
   cursor: pointer;
   display: inline-block;
 }
@@ -1115,6 +1151,10 @@ input {
 }
 
 @media (max-width: 990px) {
+  .navbar-light .unactive::after {
+    content: '';
+    display: none;
+  }
   .container-fluid {
     width: 88%;
   }

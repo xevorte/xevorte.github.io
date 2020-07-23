@@ -62,7 +62,7 @@ input {
 .navbar-light {
 
     align-items: center;
-    margin-top: 40px;
+    margin-top: 22px;
 
     .navbar-brand {
         img {
@@ -90,6 +90,38 @@ input {
         color: white !important;
         display: flex;
         flex-direction: column;
+    }
+
+    .aktif::after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid royalblue;
+        margin: auto;
+        border-radius: 100%;
+        background-color: royalblue;
+        transition: all .2s ease;
+        margin-top: 1px;
+    }
+
+    .unactive::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border: 2px solid transparent;
+        margin: auto;
+        border-radius: 100%;
+        background-color: transparent;
+        transition: all .2s ease;
+        margin-top: 1px;
+    }
+
+    .unactive:hover::after {
+        width: 10px;
+        height: 10px;
+        background-color: royalblue;
     }
 
 }
@@ -121,7 +153,9 @@ input {
         animation: scroll .7s infinite ease alternate;
 
         .scroll {
-            margin-top: 10px;
+            margin-top: 20px;
+            font-size: 40px;
+            margin-bottom: 10px;
             cursor: pointer;
             display: inline-block;
         }
@@ -1126,6 +1160,13 @@ input {
 
 
 @media (max-width: 990px) {
+
+    .navbar-light {
+        .unactive::after {
+            content: '';
+            display: none;
+        }
+    }
 
     .container-fluid {
         width: 88%;
