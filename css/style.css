@@ -86,6 +86,36 @@ input {
   font-weight: 600;
 }
 
+.navbar-light .menu input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.navbar-light .menu span {
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+  font-size: 26px;
+  margin-top: 14px;
+  color: white;
+  padding: 12px 12px;
+  border: 2px solid #2e313f;
+}
+
+.navbar-light .menu .fa-times {
+  display: none;
+  font-size: 30px;
+}
+
+.navbar-light .menu input:checked ~ .fa-times {
+  display: inline-block;
+}
+
+.navbar-light .menu input:checked ~ .fa-bars {
+  display: none;
+}
+
 .navbar-light .nav-link.aktif {
   color: white !important;
   display: -webkit-box;

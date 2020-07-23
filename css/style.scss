@@ -86,6 +86,36 @@ input {
         font-weight: 600;
     }
 
+    .menu {
+        input {
+            appearance: none;
+        }
+
+        span {
+            padding-right: 5px;
+            padding-left: 5px;
+            cursor: pointer;
+            font-size: 26px;
+            margin-top: 14px;
+            color: white;
+            padding: 12px 12px;
+            border: 2px solid #2e313f;
+        }
+
+        .fa-times {
+            display: none;
+            font-size: 30px;
+        }
+
+        input:checked~.fa-times {
+            display: inline-block;
+        }
+
+        input:checked~.fa-bars {
+            display: none;
+        }
+    }
+
     .nav-link.aktif {
         color: white !important;
         display: flex;
