@@ -94,7 +94,7 @@ body {
 }
 
 .scroll #progressbar:before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -107,7 +107,7 @@ body {
 }
 
 .scroll #progressbar:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -206,7 +206,7 @@ input {
 }
 
 .navbar-light .aktif::after {
-  content: '';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
@@ -214,13 +214,13 @@ input {
   margin: auto;
   border-radius: 100%;
   background-color: royalblue;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   margin-top: 1px;
 }
 
 .navbar-light .unactive::after {
-  content: '';
+  content: "";
   display: block;
   width: 0;
   height: 0;
@@ -228,8 +228,8 @@ input {
   margin: auto;
   border-radius: 100%;
   background-color: transparent;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   margin-top: 1px;
 }
 
@@ -240,7 +240,7 @@ input {
 }
 
 .hwhw {
-  background-image: url(../img/illustration.png);
+  background-image: url(../img/landing/illustration.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -262,8 +262,8 @@ input {
 }
 
 .hero .down {
-  -webkit-animation: scroll .7s infinite ease alternate;
-          animation: scroll .7s infinite ease alternate;
+  -webkit-animation: scroll 0.7s infinite ease alternate;
+          animation: scroll 0.7s infinite ease alternate;
 }
 
 .hero .down .scroll {
@@ -282,7 +282,7 @@ input {
 
 .hero h1::after {
   display: block;
-  content: '';
+  content: "";
   border-bottom: 14px solid royalblue;
   width: 18%;
   margin-top: 20px;
@@ -322,8 +322,8 @@ input {
   color: white;
   border-radius: 0;
   border: 2px solid royalblue;
-  -webkit-transition: all ease-in .1s;
-  transition: all ease-in .1s;
+  -webkit-transition: all ease-in 0.1s;
+  transition: all ease-in 0.1s;
 }
 
 .hero .btn-story:hover {
@@ -531,7 +531,7 @@ input {
 }
 
 .blog .bloging {
-  border-bottom: 1px solid #3F414D;
+  border-bottom: 1px solid #3f414d;
   padding-top: 40px;
   padding-bottom: 14px;
 }
@@ -560,8 +560,8 @@ input {
   padding: 4px 6px;
   background-color: white;
   height: 4px;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 
 .blog h3:hover {
@@ -704,8 +704,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -740,8 +740,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -773,8 +773,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -811,8 +811,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -858,8 +858,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -909,8 +909,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -945,8 +945,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -978,8 +978,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -1016,8 +1016,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -1063,8 +1063,8 @@ input {
           box-shadow: -4px 4px 2px black;
   font-size: 20px;
   position: relative;
-  -webkit-transition: all ease .2s;
-  transition: all ease .2s;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
   margin-bottom: 26px;
 }
 
@@ -1260,7 +1260,7 @@ input {
 
 @media (max-width: 990px) {
   .navbar-light .unactive::after {
-    content: '';
+    content: "";
     display: none;
   }
   .container-fluid {
