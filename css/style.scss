@@ -65,6 +65,7 @@ body {
   }
 
   @keyframes animate {
+
     0%,
     100% {
       filter: hue-rotate(0deg);
@@ -165,11 +166,11 @@ input {
       font-size: 30px;
     }
 
-    input:checked ~ .fa-times {
+    input:checked~.fa-times {
       display: inline-block;
     }
 
-    input:checked ~ .fa-bars {
+    input:checked~.fa-bars {
       display: none;
     }
   }
@@ -679,8 +680,6 @@ input {
 
   .profile-main {
     color: #fff;
-    height: 855px;
-    overflow: auto;
 
     .kontak {
       margin-bottom: 20px;
