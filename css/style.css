@@ -668,7 +668,11 @@ input {
 }
 
 .section-profile .profile-header .img-profile {
+<<<<<<< HEAD
   width: 35%;
+=======
+  width: 32%;
+>>>>>>> 5cb1b34 (Update 2021)
   border-radius: 100px;
   -webkit-box-shadow: 0 3px 3px #333646;
           box-shadow: 0 3px 3px #333646;
@@ -682,8 +686,11 @@ input {
 
 .section-profile .profile-main {
   color: #fff;
+<<<<<<< HEAD
   height: 855px;
   overflow: auto;
+=======
+>>>>>>> 5cb1b34 (Update 2021)
 }
 
 .section-profile .profile-main .kontak {
