@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Website">
+    <meta name="keywords" content="Irham Shidiq">
+    <title>Irham Shidiq</title>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- AOS Animation Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+</head>
+
+<body>
+
+    <div class="load" id="loading">
+        <div class="loading"></div>
+    </div>
+
+    <div class="scroll">
+        <div id="progressbar"></div>
+        <div id="scrollPath"></div>
+    </div>
+
+    <div class="hwhw">
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-down" data-aos-delay="300">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/landing/logox@2x.png">
+                </a>
+                <label class="menu d-flex justify-content-center align-items-center d-lg-none d-block"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup">
+                    <input type="checkbox" name="menu">
+                    <span class="fas fa-bars py-2"></span>
+                    <span class="fas fa-times py-2"></span>
+                </label>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-center ml-auto">
+                        <a class="nav-link aktif" href="https://irhamshidiq.github.io/">About</a>
+                        <a class="nav-link unactive" href="https://irhamshidiq.github.io/project.html">Projects</a>
+                        <a href="https://irhamshidiq.github.io/C.U.B.A.B-News" class="nav-link unactive">Blog</a>
+                        <a href="" class="nav-link unactive" data-toggle="modal" data-target="#exampleModal">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Akhir Navbar -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header border-0 text-center">
+                        <h5 class="modal-title mt-2" id="exampleModalLabel" style="font-weight: 600;"><i
+                                class="fas fa-address-card mr-2 text-primary"></i>Contact /
+                            Hire Me</h5>
+                        <button class="btn btn-success" data-dismiss="modal" aria-label="Close">
+                            <span class="fas fa-times"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body mb-4">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="fb text-center col-lg-4">
+                                <a href="https://www.facebook.com/irhamshidiq.7/" class="mx-3">
+                                    <h2 class="text-primary bg-light p-2 rounded"><i class="fab fa-facebook-f"></i>
+                                    </h2>
+                                </a>
+                                <a href="https://www.facebook.com/irhamshidiq.7/">
+                                    <p class="p-1 bg-light px-2 text-primary rounded-pill"
+                                        style="font-size: 15px; margin-top: -16px;">
+                                        Facebook</p>
+                                </a>
+                            </div>
+                            <div class="ig text-center col-lg-4">
+                                <a href="https://www.instagram.com/irham_shidiq7/" class="mx-3">
+                                    <h2 class="text-warning bg-light p-2 rounded"><i class="fab fa-instagram"></i></h2>
+                                </a>
+                                <a href="https://www.instagram.com/irhamshidiq7">
+                                    <p class="p-1 bg-light px-2 text-warning rounded-pill"
+                                        style="font-size: 15px; margin-top: -16px;">
+                                        Instagram</p>
+                                </a>
+                            </div>
+                            <div class="db text-center col-lg-4">
+                                <a href="https://dribbble.com/IrhamShidiq" class="mx-3">
+                                    <h2 class="bg-light p-2 rounded" style="color: magenta;"><i
+                                            class="fab fa-dribbble"></i></h2>
+                                </a>
+                                <a href="https://dribbble.com/IrhamShidiq">
+                                    <p class="p-1 bg-light px-2 rounded-pill"
+                                        style="color: magenta;font-size: 15px; margin-top: -16px;">
+                                        Dribbble</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center justify-content-between">
+                            <div class="fb text-center col-lg-4">
+                                <a href="https://github.com/IrhamShidiq" class="mx-3">
+                                    <h2 class="text-info bg-light p-2 rounded"><i class="fab fa-github"></i>
+                                    </h2>
+                                </a>
+                                <a href="https://github.com/IrhamShidiq">
+                                    <p class="p-1 bg-light px-2 text-info rounded-pill"
+                                        style="font-size: 15px; margin-top: -16px;">
+                                        Github</p>
+                                </a>
+                            </div>
+                            <div class="ig text-center col-lg-4">
+                                <a href="https://api.whatsapp.com/send?phone=6281310481842" class="mx-3">
+                                    <h2 class="text-success bg-light p-2 rounded"><i class="fab fa-whatsapp"></i></h2>
+                                </a>
+                                <a href="https://api.whatsapp.com/send?phone=6281310481842">
+                                    <p class="p-1 bg-light px-2 text-success rounded-pill"
+                                        style="font-size: 15px; margin-top: -16px;">
+                                        Whatsapp</p>
+                                </a>
+                            </div>
+                            <div class="db text-center col-lg-4">
+                                <a href="birhamshidiq@gmail.com" class="mx-3">
+                                    <h2 class="text-danger bg-light p-2 rounded"><i class="	fas fa-envelope"></i></h2>
+                                </a>
+                                <a href="birhamshidiq@gmail.com">
+                                    <p class="p-1 bg-light px-2 text-danger rounded-pill"
+                                        style="font-size: 15px; margin-top: -16px;">
+                                        Email</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero -->
+
+        <section class="hero">
+            <div class="container-fluid">
+                <div class="row justify-content-between">
+                    <div class="col-lg-6" data-aos="fade-right" data-aos-delay="1000">
+                        <h1>Irham<br>Shidiq.</h1>
+                        <div class="sosmed d-flex">
+                            <a href="https://www.facebook.com/irhamshidiq.7/">
+                                <h4><i class="fab fa-facebook-square"></i></h4>
+                            </a>
+                            <a href="https://www.instagram.com/irham_shidiq7/" class="ssmd">
+                                <h4><i class="fab fa-instagram"></i></h4>
+                            </a>
+                            <a href="https://dribbble.com/IrhamShidiq" class="ssmd">
+                                <h4><i class="fab fa-dribbble"></i></h4>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-lg-2 mt-5 intro" data-aos="fade-up" data-aos-delay="1000">
+                        <h5>- Introduction</h5>
+                        <h2>Web Developer and Designer, Based in Indonesia.</h2>
+                        <p>Saya Irham Muhammad Shidiq,
+                            Saya sedang belajar di SMK Bina Mandiri Multimedia, dan memilih jurusan RPL. Saya baru
+                            saja naik kelas XI (2)</p>
+                        <a href="profile.html">
+                            <button class="btn btn-story px-5 py-2 mt-4">View My Profile</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="down text-center">
+                    <a href="#scrollabel">
+                        <h2 class="scroll display-5 text-white"><i class="fas fa-chevron-down"></i></h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Akhir Hero -->
+
+    </div>
+
+
+    <!-- Contact / Creativity -->
+
+    <section class="contact" id="scrollabel">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 kiri">
+                    <div data-aos="fade-up">
+                        <h4>- Contact</h4>
+                        <h2>Any Tipe Of Query<br> & Discussion</h2>
+                        <p>Ada yang ingin disampaikan atau pertanyaan langsung<br> saja hubungi saya, jangan sungkan</p>
+                    </div>
+                    <a href="https://irhamshidiq.github.io/profile.html">
+                        <div data-aos="fade-right">
+                            <h6 class="mb-4">irhamshidiq.github.io</h6>
+                            <h3><i class="fas fa-chevron-right ml-lg-5 ml-4"></i></h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 kanan mt-4">
+                    <div data-aos="fade-up" data-aos-delay="400">
+                        <h2>You can't use up Creativity,<br> the more you use, more you have<br> in your Signifant Mind
+                        </h2>
+                        <p>Anda tidak dapat menggunakan Kreativitas,
+                            semakin banyak Anda menggunakan, semakin banyak yang Anda miliki
+                            dalam Pikiran Signifant Anda</p>
+                    </div>
+                    <div class="row" style="margin-top: 40px;">
+                        <div class="col-md-6 mb-5 year d-flex align-items-center" data-aos="fade-up"
+                            data-aos-delay="400">
+                            <h1>1</h1>
+                            <h5 class="ml-4">Year Of<br> Exprience</h5>
+                        </div>
+                        <div class="col-md-6 mb-5 year d-flex align-items-center" data-aos-delay="800"
+                            data-aos="fade-up">
+                            <h1>77</h1>
+                            <h5 class="ml-4">Satisfied<br> Clients</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Contact / Creativity -->
+
+
+    <!-- Panel -->
+
+    <section class="panel">
+        <div class="container-fluid">
+            <div class="row mx-auto">
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h2><i class="fas fa-code"></i></h2>
+                            <h4 class="card-text">Website<br> Developer</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card active" style="width: 100%">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h2><i class="fas fa-laptop-code"></i></h2>
+                            <h4 class="card-text">Full Stack<br> Developer</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4" data-aos="fade-up" data-aos-delay="900">
+                    <div class="card" style="width: 100%">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h2><i class="fas fa-pen-fancy"></i></h2>
+                            <h4 class="card-text">Website<br> Designer</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Panel -->
+
+
+    <!-- Brands -->
+
+    <section class="brand">
+        <div class="container-fluid" data-aos="zoom-in" data-aos-delay="400">
+            <div class="row justify-content-center align-items-center" style="margin-top: 70px;">
+                <div class="col-lg-3 text-center"><img src="img/landing/google.png"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/codepen.png" class="brando"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/yahoo.png"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/amazon.png"></div>
+            </div>
+            <div class="row justify-content-center align-items-center mt-3">
+                <div class="col-lg-3 text-center"><img src="img/landing/netflix.png"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/spotify.png"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/nvidia.png" class="brando"></div>
+                <div class="col-lg-3 text-center"><img src="img/landing/invision.png" class="brando"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Brands -->
+
+
+    <!-- Portfolio -->
+
+    <section class="portfolio">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-5 kiri">
+                    <a href="https://irhamshidiq.github.io/productly/">
+                        <figure class="figure1" data-aos="fade-right" data-aos-delay="400">
+                            <figcaption class="figure-caption">
+                                <div class="row justify-content-between align-items-baseline">
+                                    <div class="col-lg-6">
+                                        <p class="first-title">Productly</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="two-title">Web, Design</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                            <img src="img/landing/productly.png" class="figure-img img-fluid"
+                                style="margin-bottom: -1px;">
+                        </figure>
+                    </a>
+
+                    <a href="https://irhamshidiq.github.io/C.U.B.A.B-News/">
+                        <figure class="figure2" data-aos="fade-right" data-aos-delay="400">
+                            <figcaption class="figure-caption">
+                                <div class="row justify-content-between align-items-baseline">
+                                    <div class="col-lg-6">
+                                        <p class="first-title">C.U.B.A.B News</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="two-title">Web, Design</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                            <img src="img/landing/berita.png" class="figure-img img-fluid" style="margin-bottom: -1px;">
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-lg-5 kanan">
+                    <div data-aos="fade-up">
+                        <h4>- Portfolio</h4>
+                        <h2>All Creative Works,<br> Selected Projects</h2>
+                        <p>Semua Karya Saya, Saya Lampirkan Beberapa Yang Terbaik</p>
+                        <div class="ims d-flex" style="margin-top: 60px;">
+                            <a href="https://irhamshidiq.github.io/project.html">
+                                <button class="btn btn-explore-more px-5 py-2">Explore More<i
+                                        class="fas fa-chevron-right"
+                                        style="margin-left: 20px; margin-top: 5px;"></i></button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <a href="https://irhamshidiq.github.io/C.U.B.A.B-Travel/">
+                        <figure class="figure3" data-aos="fade-up">
+                            <figcaption class="figure-caption">
+                                <div class="row justify-content-between align-items-baseline">
+                                    <div class="col-lg-6">
+                                        <p class="first-title">Travel</p>
+                                    </div>
+                                    <div class="col-lg-5">
+                                        <p class="two-title">Web, Development</p>
+                                    </div>
+                                </div>
+                            </figcaption>
+                            <img src="img/landing/travel.png" class="figure-img img-fluid" style="margin-bottom: -1px;">
+                        </figure>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Portfolio -->
+
+
+    <!-- Blog -->
+
+    <section class="blog">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h4>- Blog</h4>
+                    <h2>What's New?<br> My Blog And News</h2>
+                </div>
+                <div class="col-lg-7" style="margin-top: 40px;">
+                    <div class="row justify-content-end align-items-baseline bloging" data-aos-delay="400"
+                        data-aos="fade-right">
+                        <div class="col-3">
+                            <p>July 3 - Blog</p>
+                        </div>
+                        <div class="col-md-7 col-8">
+                            <h5>Ego and Emphathy in Design</h5>
+                        </div>
+                        <div class="col-1">
+                            <a href="">
+                                <h3><i class="fas fa-arrow-right"></i></h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end align-items-baseline bloging" data-aos-delay="800"
+                        data-aos="fade-right">
+                        <div class="col-3">
+                            <p>July 7 - Blog</p>
+                        </div>
+                        <div class="col-md-7 col-8">
+                            <h5>Let this be a Lesson to you</h5>
+                        </div>
+                        <div class="col-1">
+                            <a href="">
+                                <h3><i class="fas fa-arrow-right"></i></h3>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-end align-items-baseline bloging" data-aos-delay="1200"
+                        data-aos="fade-right">
+                        <div class="col-3">
+                            <p>July 14 - Blog</p>
+                        </div>
+                        <div class="col-md-7 col-8">
+                            <h5>How do you use time tracking for projects</h5>
+                        </div>
+                        <div class="col-1">
+                            <a href="">
+                                <h3><i class="fas fa-arrow-right"></i></h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Blog -->
+
+
+    <!-- Testimonial -->
+
+    <section class="testimonial">
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators" style="margin-right: 44px;">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row" data-aos="fade-right" data-aos-delay="400">
+                            <div class="col-lg-6">
+                                <img src="img/landing/woman.png" style="width: 96%; border: 1px solid black;">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="mb-4 mt-3"><i class="fas fa-quote-left"></i></h1>
+                                <h2>Great! I Recommend Using The Services Of This Person, He Is Fast Response And Also
+                                    Very
+                                    Friendly!</h2>
+                                <h3>Annisa Putri<br><span>Front End Web Developer</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a> -->
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon ml-3" style="margin-top: -20px;"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row" data-aos="fade-right" data-aos-delay="400">
+                            <div class="col-lg-6">
+                                <img src="img/landing/man.png" style="width: 96%; border: 1px solid black;">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="mb-4 mt-3"><i class="fas fa-quote-left"></i></h1>
+                                <h2>Cheap & Fast! And Also This Person Is Very Friendly, I Highly Recommend Using The
+                                    Services Of This Person
+                                </h2>
+                                <h3>John Lender<br><span>Freelancer</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a> -->
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon ml-3" style="margin-top: -20px;"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row" data-aos="fade-right" data-aos-delay="400">
+                            <div class="col-lg-6">
+                                <img src="img/landing/woman2.png" style="width: 96%; border: 1px solid black;">
+                            </div>
+                            <div class="col-lg-6">
+                                <h1 class="mb-4 mt-3"><i class="fas fa-quote-left"></i></h1>
+                                <h2>Every Time I Use His Services, Very Professional Has Never Been Disappointed. Good
+                                    Job!</h2>
+                                <h3>Sarah Connor<br><span>Senior Programmer</span></h3>
+                            </div>
+                        </div>
+
+                        <!-- <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a> -->
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon ml-3" style="margin-top: -20px;"
+                                aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Testimonial -->
+
+
+    <!-- Project -->
+
+    <section class="project">
+        <div class="container-fluid">
+            <div class="row align-content-center">
+                <div class="col-lg-6">
+                    <div data-aos="fade-up">
+                        <h2>Got a Project?<br> Let's Talk</h2>
+                        <p>Ada yang ingin disampaikan atau pertanyaan langsung<br> saja hubungi saya, jangan sungkan</p>
+                    </div>
+                    <div class="ims d-flex" style="margin-top: 60px;" data-aos="fade-right" data-aos-delay="600">
+                        <a href="https://irhamshidiq.github.io">
+                            <button class="btn btn-explore-more px-3 py-2 mb-4">irhamshidiq.github.io<i
+                                    class="fas fa-chevron-right"
+                                    style="margin-left: 20px; margin-top: 5px;"></i></button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" style="margin-top: 30px;">
+                    <form action="mailto:birhamshidiq@gmail.com" method="post" enctype="text/plain">
+                        <div data-aos="fade-right" data-aos-delay="200">
+                            <label for="name" class="form-label text-white" style="font-size: 20px;">Your Name</label>
+                            <input type="text" id="name"
+                                class="form-control text-white rounded-0 border-0 bg-transparent border-bottom mb-4">
+                        </div>
+                        <div data-aos="fade-right" data-aos-delay="400">
+                            <label for="email" class="form-label text-white" style="font-size: 20px;">Your Email</label>
+                            <input type="text" id="email"
+                                class="form-control text-white rounded-0 border-0 bg-transparent border-bottom mb-5">
+                        </div>
+                        <button class="btn btn-subscribe btn-block py-2" value="Send" data-aos="fade-up"
+                            data-aos-delay="200">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Akhir Project -->
+
+
+    <!-- Footer -->
+
+    <section class="footer" data-aos="flip-right">
+        <div class="container-fluid">
+            <p>Copyright 2020 by <span style="font-weight: 700; color: royalblue;">Irham Shidiq</span></p>
+            <div class="row justify-content-center mt-4">
+                <div class="col-1">
+                    <h5><i class="fab fa-html5"></i></h5>
+                </div>
+                <div class="col-1">
+                    <h5><i class="fab fa-js"></i></h5>
+                </div>
+                <div class="col-1">
+                    <h5><i class="fab fa-css3-alt"></i></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Akhir Footer -->
+
+    <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYOffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
+    </script>
+    <script src="js/load.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700
+        });
+    </script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
