@@ -680,7 +680,7 @@ input {
 
   .profile-main {
     color: #fff;
-    height: 855px;
+    height: 1100px;
     overflow: auto;
 
     .kontak {
@@ -1281,5 +1281,20 @@ input {
 
   h2 {
     text-align: center;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .section-profile {
+
+    .profile-desc,
+    .pendidikan,
+    .pengalaman,
+    .prestasi {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
   }
 }
