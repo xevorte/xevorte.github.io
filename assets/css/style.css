@@ -239,7 +239,7 @@ input {
   background-color: royalblue;
 }
 
-.hwhw {
+.header {
   background-image: url(../img/landing/illustration.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -397,6 +397,15 @@ input {
   padding-bottom: 20px;
   padding-top: 260px;
   margin-bottom: 20px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform: perspective(1000px);
+          transform: perspective(1000px);
+}
+
+.panel .card .card-body {
+  -webkit-transform: translateZ(40px);
+          transform: translateZ(40px);
 }
 
 .panel .card h2 {
@@ -1266,7 +1275,7 @@ input {
   .container-fluid {
     width: 84%;
   }
-  .hwhw {
+  .header {
     background-image: none;
   }
   .portfolio .kiri {
@@ -1283,7 +1292,7 @@ input {
   .project h4 {
     margin-top: 20px;
   }
-  .hwhw {
+  .header {
     background-attachment: scroll;
   }
   .hero h1 {

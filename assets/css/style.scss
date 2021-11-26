@@ -214,7 +214,7 @@ input {
   }
 }
 
-.hwhw {
+.header {
   background-image: url(../img/landing/illustration.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -383,6 +383,12 @@ input {
     padding-bottom: 20px;
     padding-top: 260px;
     margin-bottom: 20px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+
+    .card-body {
+      transform: translateZ(40px);
+    }
 
     h2 {
       margin-bottom: 20px;
@@ -1219,7 +1225,7 @@ input {
     width: 84%;
   }
 
-  .hwhw {
+  .header {
     background-image: none;
   }
 
@@ -1240,7 +1246,7 @@ input {
     }
   }
 
-  .hwhw {
+  .header {
     background-attachment: scroll;
   }
 
