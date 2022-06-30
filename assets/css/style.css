@@ -1192,6 +1192,7 @@ input {
 
 .section-project .projects {
   background-color: #252734;
+  min-height: 460px;
   margin: 80px 0;
 }
 
