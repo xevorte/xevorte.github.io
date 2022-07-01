@@ -691,6 +691,8 @@ input {
 
 .section-profile .profile-main {
   color: #fff;
+  height: 1040px;
+  overflow-y: scroll;
 }
 
 .section-profile .profile-main .kontak {
